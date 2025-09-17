@@ -9,3 +9,15 @@ C:\Users\ganes\Downloads\copilot_day5_samples\dotnet-sample\FileProcessorLib\obj
 C:\Users\ganes\Downloads\copilot_day5_samples\dotnet-sample\FileProcessorLib\obj\Debug\net7.0\refint\FileProcessorLib.dll
 C:\Users\ganes\Downloads\copilot_day5_samples\dotnet-sample\FileProcessorLib\obj\Debug\net7.0\FileProcessorLib.pdb
 C:\Users\ganes\Downloads\copilot_day5_samples\dotnet-sample\FileProcessorLib\obj\Debug\net7.0\ref\FileProcessorLib.dll
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\bin\Debug\net7.0\FileProcessorLib.deps.json
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\bin\Debug\net7.0\FileProcessorLib.dll
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\bin\Debug\net7.0\FileProcessorLib.pdb
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net7.0\FileProcessorLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net7.0\FileProcessorLib.AssemblyInfoInputs.cache
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net7.0\FileProcessorLib.AssemblyInfo.cs
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net7.0\FileProcessorLib.csproj.CoreCompileInputs.cache
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net7.0\FileProcessorLib.sourcelink.json
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net7.0\FileProcessorLib.dll
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net7.0\refint\FileProcessorLib.dll
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net7.0\FileProcessorLib.pdb
+C:\Users\jatinderpal.singh\source\repos\GreatLearning\DemoProjectDay5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net7.0\ref\FileProcessorLib.dll
