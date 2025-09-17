@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sLEbECYBEGWuZ6bGeKKj8Ll1QpYdgHlDNGMZDhHz12kl1M46DZ5+muBB3RIg5AZWRccsL4o62DHfwkV2IsW8nw==",
+  "dgSpecHash": "p/V7Tz42pVy9iju/6O21orodHN8xqfnd18ZOB0HDlBWx4zCfL9HPDRW5TY+WWUrOH1zauE5WoDk2ef4Mg6Q7Hw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj",
+  "projectFilePath": "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

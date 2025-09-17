@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\fileProcessorTests\\FileProcessorTests.csproj": {}
+    "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorTests\\FileProcessorTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj": {
+    "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj",
+        "projectUniqueName": "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj",
         "projectName": "FileProcessorLib",
-        "projectPath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj",
+        "projectPath": "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\obj\\",
+        "outputPath": "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -57,14 +57,14 @@
         }
       }
     },
-    "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\fileProcessorTests\\FileProcessorTests.csproj": {
+    "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorTests\\FileProcessorTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\fileProcessorTests\\FileProcessorTests.csproj",
+        "projectUniqueName": "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorTests\\FileProcessorTests.csproj",
         "projectName": "FileProcessorTests",
-        "projectPath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\fileProcessorTests\\FileProcessorTests.csproj",
+        "projectPath": "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorTests\\FileProcessorTests.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\fileProcessorTests\\obj\\",
+        "outputPath": "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -79,8 +79,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj"
+              "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj": {
+                "projectPath": "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj"
               }
             }
           }

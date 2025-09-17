@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RwzPGS/cmHQ5TEmydF7Efoijn9rQYwKCRnVSkMmbae3427LohGD+2lreEki9vCJZis7gVlIwimRnrVyJXtrL2g==",
+  "dgSpecHash": "B8+fVNO3QybuY4kiJ7xXu9f3adB6av/pZd5I8rNMfTj73to0s9bkzkVGwMo9JP2FvLXEaGeoe/JII0rqs8Swkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\fileProcessorTests\\FileProcessorTests.csproj",
+  "projectFilePath": "c:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorTests\\FileProcessorTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.codecoverage\\17.11.0\\microsoft.codecoverage.17.11.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.net.test.sdk\\17.11.0\\microsoft.net.test.sdk.17.11.0.nupkg.sha512",
