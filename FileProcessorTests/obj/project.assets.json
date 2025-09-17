@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net6.0": {
       "Microsoft.CodeCoverage/17.11.0": {
         "type": "package",
         "compile": {
@@ -1695,7 +1695,7 @@
       },
       "FileProcessorLib/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/FileProcessorLib.dll": {}
         },
@@ -5428,7 +5428,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net6.0": [
       "FileProcessorLib >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.11.0",
       "xunit >= 2.5.3",
@@ -5436,39 +5436,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ganes\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorTests\\FileProcessorTests.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorTests\\FileProcessorTests.csproj",
       "projectName": "FileProcessorTests",
-      "projectPath": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorTests\\FileProcessorTests.csproj",
-      "packagesPath": "C:\\Users\\ganes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorTests\\obj\\",
+      "projectPath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorTests\\FileProcessorTests.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorTests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ganes\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\FileProcessorLib.csproj": {
-              "projectPath": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\FileProcessorLib.csproj"
+            "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj"
             }
           }
         }
@@ -5477,17 +5470,11 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -5513,26 +5500,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,12 @@
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\bin\Debug\net6.0\FileProcessorLib.deps.json
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\bin\Debug\net6.0\FileProcessorLib.dll
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\bin\Debug\net6.0\FileProcessorLib.pdb
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net6.0\FileProcessorLib.csproj.AssemblyReference.cache
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net6.0\FileProcessorLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net6.0\FileProcessorLib.AssemblyInfoInputs.cache
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net6.0\FileProcessorLib.AssemblyInfo.cs
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net6.0\FileProcessorLib.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net6.0\FileProcessorLib.dll
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net6.0\refint\FileProcessorLib.dll
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net6.0\FileProcessorLib.pdb
+C:\Users\Administrator\Day5\copilot-day5-dotnet\FileProcessorLib\obj\Debug\net6.0\ref\FileProcessorLib.dll

@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qekw0IQHSUw=",
+  "dgSpecHash": "FxZDPPZZsKbfVKSW0TviERKsLjKQ6HTaKLF9siCOJn2mT2nTztvaqIzI/NsQDYn7QdsI80pXyyoql+IKC5cxwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorApp\\FileProcessorApp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ganes\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\ganes\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\ganes\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\ganes\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Administrator\\Day5\\copilot-day5-dotnet\\FileProcessorApp\\FileProcessorApp.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
