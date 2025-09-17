@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-test-format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore FileProcessorApp/FileProcessorApp.csproj
+
+      - name: Build App
+        run: dotnet build FileProcessorApp/FileProcessorApp.csproj --configuration Release --no-restore
+
+      - name: Build Lib
+        run: dotnet build FileProcessorLib/FileProcessorLib.csproj --configuration Release --no-restore
+
+      - name: Build Tests
+        run: dotnet build FileProcessorTests/FileProcessorTests.csproj --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test FileProcessorTests/FileProcessorTests.csproj --no-build --verbosity normal
+
+      - name: Check formatting (app project)
+        run: dotnet format FileProcessorApp/FileProcessorApp.csproj --verify-no-changes
+
+      - name: Check formatting (lib project)
+        run: dotnet format FileProcessorLib/FileProcessorLib.csproj --verify-no-changes
+
+      - name: Check formatting (test project)
+        run: dotnet format FileProcessorTests/FileProcessorTests.csproj --verify-no-changes
