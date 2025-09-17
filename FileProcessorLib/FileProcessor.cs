@@ -1,6 +1,7 @@
 
 using System;
 using System.IO;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -13,6 +14,7 @@ namespace FileProcessorLib
     public class FileProcessor
     {
         private const int DefaultBufferSize = 8192; // 8KB buffer
+        private const long MaxFileSizeForDirectRead = 50 * 1024 * 1024; // 50MB limit for direct read
 
         /// <summary>
         /// Gets the character length of a file synchronously.
@@ -27,6 +29,13 @@ namespace FileProcessorLib
         {
             ValidatePath(path);
             
+            // Security: Check file size before loading into memory
+            var fileInfo = new FileInfo(path);
+            if (fileInfo.Length > MaxFileSizeForDirectRead)
+            {
+                throw new InvalidOperationException($"File too large for direct read. Use streaming methods instead. Max size: {MaxFileSizeForDirectRead / (1024 * 1024)}MB");
+            }
+            
             try
             {
                 // For backward compatibility, keeping the original approach but with validation
@@ -35,11 +44,11 @@ namespace FileProcessorLib
             }
             catch (UnauthorizedAccessException ex)
             {
-                throw new InvalidOperationException($"Access denied to file: {path}", ex);
+                throw new InvalidOperationException("Access denied to file", ex);
             }
             catch (IOException ex)
             {
-                throw new InvalidOperationException($"Failed to read file: {path}", ex);
+                throw new InvalidOperationException("Failed to read file", ex);
             }
         }
 
@@ -141,31 +150,54 @@ namespace FileProcessorLib
 
         /// <summary>
         /// Validates the file path and throws appropriate exceptions.
+        /// Includes security checks for path traversal attacks.
         /// </summary>
         /// <param name="path">The path to validate</param>
         /// <exception cref="ArgumentException">Thrown when path is null, empty, or contains invalid characters</exception>
         /// <exception cref="FileNotFoundException">Thrown when file doesn't exist</exception>
+        /// <exception cref="UnauthorizedAccessException">Thrown when path contains security violations</exception>
         private static void ValidatePath(string path)
         {
             if (string.IsNullOrWhiteSpace(path))
                 throw new ArgumentException("Path cannot be null or empty", nameof(path));
             
             // Check for invalid path characters before checking if file exists
+            string fullPath;
             try
             {
-                Path.GetFullPath(path);
+                fullPath = Path.GetFullPath(path);
             }
             catch (ArgumentException)
             {
-                throw new ArgumentException($"Path contains invalid characters: {path}", nameof(path));
+                throw new ArgumentException("Path contains invalid characters", nameof(path));
             }
             catch (NotSupportedException)
             {
-                throw new ArgumentException($"Path format is not supported: {path}", nameof(path));
+                throw new ArgumentException("Path format is not supported", nameof(path));
+            }
+            
+            // Security: Check for path traversal attempts
+            if (path.Contains("..") || path.Contains("../") || path.Contains("..\\"))
+            {
+                throw new UnauthorizedAccessException("Path traversal attempts are not allowed");
+            }
+            
+            // Security: Prevent access to system directories (Windows)
+            var systemPaths = new[] { 
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), "System32"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), "SysWOW64"),
+                Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+                Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86)
+            };
+            
+            if (systemPaths.Any(systemPath => !string.IsNullOrEmpty(systemPath) && 
+                fullPath.StartsWith(systemPath, StringComparison.OrdinalIgnoreCase)))
+            {
+                throw new UnauthorizedAccessException("Access to system directories is not allowed");
             }
             
             if (!File.Exists(path))
-                throw new FileNotFoundException($"File not found: {path}");
+                throw new FileNotFoundException("File not found");
         }
     }
 }

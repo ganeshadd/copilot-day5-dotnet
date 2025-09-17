@@ -334,6 +334,46 @@ namespace FileProcessorTests
             await Assert.ThrowsAsync<ArgumentException>(() => proc.GetFileLengthAsync("\t\n"));
         }
 
+        // SECURITY TESTS - Testing security vulnerabilities
+
+        [Fact]
+        public void GetFileLength_ThrowsUnauthorizedAccessException_ForPathTraversalAttempt()
+        {
+            // Security Test: Path traversal should be blocked
+            var proc = new FileProcessor();
+            
+            Assert.Throws<UnauthorizedAccessException>(() => proc.GetFileLength("../../../sensitive-file.txt"));
+            Assert.Throws<UnauthorizedAccessException>(() => proc.GetFileLength("..\\..\\..\\sensitive-file.txt"));
+        }
+
+        [Fact]
+        public void GetFileLength_ThrowsInvalidOperationException_ForLargeFile()
+        {
+            // Security Test: Large files should be rejected to prevent DoS
+            var largeFilePath = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString() + "_toolarge.txt");
+            
+            try
+            {
+                // Create a file larger than 50MB (51MB)
+                using (var writer = new StreamWriter(largeFilePath))
+                {
+                    var largeContent = new string('X', 1024); // 1KB chunk
+                    for (int i = 0; i < 52 * 1024; i++) // 52MB total
+                    {
+                        writer.Write(largeContent);
+                    }
+                }
+                
+                var proc = new FileProcessor();
+                
+                Assert.Throws<InvalidOperationException>(() => proc.GetFileLength(largeFilePath));
+            }
+            finally
+            {
+                if (File.Exists(largeFilePath)) File.Delete(largeFilePath);
+            }
+        }
+
         public void Dispose()
         {
             if (File.Exists(_tempPath)) File.Delete(_tempPath);
