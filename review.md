@@ -45,7 +45,7 @@ Reason:
 
 Tests run (commands + summary output):
 - e.g., dotnet test` => PASS
-- Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: < 1 ms - FileProcessorTests.dll (net6.0)
+- Passed!  - Failed:     0, Passed:     7, Skipped:     0, Total:     7, Duration: 8 ms - FileProcessorTests.dll (net6.0)
 
 Final notes / PR link:
 - Improved the solution
