@@ -1,16 +1,36 @@
-
 using System;
+using System.Threading.Tasks;
 
 namespace FileProcessorLib
 {
-    // Smelly implementation: synchronous file read which blocks thread pool for large files.
     public class FileProcessor
     {
-        public int GetFileLength(string path)
+        private readonly IFileReader _fileReader;
+
+        public FileProcessor(IFileReader fileReader)
         {
-            // Intentionally using blocking IO (File.ReadAllText) to illustrate a fix to async streaming.
-            var text = System.IO.File.ReadAllText(path);
-            return text.Length;
+            _fileReader = fileReader ?? throw new ArgumentNullException(nameof(fileReader));
+        }
+
+        public async Task<int> GetFileLengthAsync(string path)
+        {
+            if (string.IsNullOrWhiteSpace(path))
+                throw new ArgumentException("File path cannot be null or empty.", nameof(path));
+            try
+            {
+                var text = await _fileReader.ReadAllTextAsync(path);
+                return text?.Length ?? 0;
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                // File not found, return 0 or handle as needed
+                return 0;
+            }
+            catch (System.IO.IOException ex)
+            {
+                // Log or handle IO exceptions
+                throw new InvalidOperationException($"IO error reading file: {ex.Message}", ex);
+            }
         }
     }
 }

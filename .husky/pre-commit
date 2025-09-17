@@ -1,0 +1,45 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+git add .
+
+# Run dotnet build and test before commit
+echo "Building"
+cd FileProcessorApp
+if ! dotnet build; then
+  echo "Build failed. Commit aborted."
+  exit 1
+fi
+
+echo "checking format"
+if ! dotnet format --verify-no-changes; then
+  echo "Code format issues found. Please run 'dotnet format' to fix them. Commit aborted."
+  exit 1
+fi
+
+echo "Running Lib Project"
+cd ../FileProcessorLib
+if ! dotnet build; then
+  echo "Lib Project build failed. Commit aborted."
+  exit 1
+fi
+echo "checking format"
+if ! dotnet format --verify-no-changes; then
+  echo "Code format issues found. Please run 'dotnet format' to fix them. Commit aborted."
+  exit 1
+fi
+
+echo "Running Tests"
+cd ../FileProcessorTests
+if ! dotnet test; then
+  echo "Tests failed. Commit aborted."
+  exit 1
+fi
+
+echo "checking format"
+if ! dotnet format --verify-no-changes; then
+  echo "Code format issues found. Please run 'dotnet format' to fix them. Commit aborted."
+  exit 1
+fi
+
+echo "All checks passed. Proceeding with commit."
