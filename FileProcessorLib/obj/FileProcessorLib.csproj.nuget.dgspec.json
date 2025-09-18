@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\FileProcessorLib.csproj": {}
+    "C:\\Users\\kunal.chhabra\\source\\repos\\Training\\copilot-day5-dotnet-1\\FileProcessorLib\\FileProcessorLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\FileProcessorLib.csproj": {
+    "C:\\Users\\kunal.chhabra\\source\\repos\\Training\\copilot-day5-dotnet-1\\FileProcessorLib\\FileProcessorLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\FileProcessorLib.csproj",
+        "projectUniqueName": "C:\\Users\\kunal.chhabra\\source\\repos\\Training\\copilot-day5-dotnet-1\\FileProcessorLib\\FileProcessorLib.csproj",
         "projectName": "FileProcessorLib",
-        "projectPath": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\FileProcessorLib.csproj",
-        "packagesPath": "C:\\Users\\ganes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\obj\\",
+        "projectPath": "C:\\Users\\kunal.chhabra\\source\\repos\\Training\\copilot-day5-dotnet-1\\FileProcessorLib\\FileProcessorLib.csproj",
+        "packagesPath": "C:\\Users\\kunal.chhabra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kunal.chhabra\\source\\repos\\Training\\copilot-day5-dotnet-1\\FileProcessorLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ganes\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\kunal.chhabra\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,11 +41,25 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -79,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.110\\RuntimeIdentifierGraph.json"
         }
       }
     }
