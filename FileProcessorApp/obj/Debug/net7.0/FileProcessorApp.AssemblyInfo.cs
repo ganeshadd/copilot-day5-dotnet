@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("FileProcessorApp-5e3cd3e1-5388-4fd5-926c-9bd8902fa5c9")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FileProcessorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76f5152da2fc11b014badc4f26f51e7526168e49")]
 [assembly: System.Reflection.AssemblyProductAttribute("FileProcessorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FileProcessorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
