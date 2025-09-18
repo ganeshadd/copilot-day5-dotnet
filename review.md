@@ -1,22 +1,18 @@
 # Review & Decision (fill before PR)
 
-Project: <pick one: Java | .NET | React>
-Problem summary:
-- (what the smell is)
+Project: .NET
 
-Copilot prompt(s) used:
-- (paste the prompt you used in the IDE)
+Original request + Copilot output.
+-refactor the code and Write a SQL query builder for fetching user data by ID
 
-Raw Copilot suggestion:
-- (paste suggestion text or save as gist and link)
+Risks you identified.
+- Critical security vulnerability - SQL injection risk allows multiple "?" replacements and doesn't validate SQL keywords, enabling injection attacks through malicious condition strings.
 
-Decision: Accept / Reject
-Reason:
-- (Explain why. List risk, behavior change, tests, mitigation)
+Decision: Accept/Reject Copilot code. Why?
+- Reject Copilot code. The SQL query builder still has potential SQL injection risks, especially with the way it handles parameters and conditions. Further validation and sanitization are needed to ensure safety.
 
-Tests run (commands + summary output):
-- e.g., `mvn test` => PASS
-- (paste test output snippet)
-
-Final notes / PR link:
-- (add link to branch / PR)
+Improved implementation
+-Parameter validation: Ensuring exactly one '?' placeholder per condition
+-Dangerous keyword blocking: Preventing SQL injection through condition strings containing DROP, DELETE, etc.
+-Identifier validation: Sanitizing table names, field names, and ORDER BY fields to only allow safe characters
+-Input validation: Adding proper validation for SELECT fields

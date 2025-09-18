@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\FileProcessorLib.csproj": {}
+    "C:\\Users\\jatinderpal.singh\\source\\repos\\GreatLearning\\DemoProjectDay6\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\FileProcessorLib.csproj": {
+    "C:\\Users\\jatinderpal.singh\\source\\repos\\GreatLearning\\DemoProjectDay6\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\FileProcessorLib.csproj",
+        "projectUniqueName": "C:\\Users\\jatinderpal.singh\\source\\repos\\GreatLearning\\DemoProjectDay6\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj",
         "projectName": "FileProcessorLib",
-        "projectPath": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\FileProcessorLib.csproj",
-        "packagesPath": "C:\\Users\\ganes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ganes\\Downloads\\copilot_day5_samples\\dotnet-sample\\FileProcessorLib\\obj\\",
+        "projectPath": "C:\\Users\\jatinderpal.singh\\source\\repos\\GreatLearning\\DemoProjectDay6\\copilot-day5-dotnet\\FileProcessorLib\\FileProcessorLib.csproj",
+        "packagesPath": "C:\\Users\\jatinderpal.singh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jatinderpal.singh\\source\\repos\\GreatLearning\\DemoProjectDay6\\copilot-day5-dotnet\\FileProcessorLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ganes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jatinderpal.singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -60,26 +60,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.20, 7.0.20]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.20, 7.0.20]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.20, 7.0.20]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     }
